@@ -1,12 +1,12 @@
 :root {
-  --fg-color: rgb(55, 53, 47);
-  --fg-color-0: rgba(55, 53, 47, 0.09);
-  --fg-color-1: rgba(55, 53, 47, 0.16);
-  --fg-color-2: rgba(55, 53, 47, 0.4);
-  --fg-color-3: rgba(55, 53, 47, 0.6);
+  --fg-color: rgb(63, 63, 63);
+  --fg-color-0: rgba(63, 63, 63, 0.09);
+  --fg-color-1: rgba(63, 63, 63, 0.16);
+  --fg-color-2: rgba(63, 63, 63, 0.4);
+  --fg-color-3: rgba(63, 63, 63, 0.6);
   --fg-color-4: #000;
-  --fg-color-5: rgba(55, 53, 47, 0.024);
-  --fg-color-6: rgba(55, 53, 47, 0.8);
+  --fg-color-5: rgba(63, 63, 63, 0.024);
+  --fg-color-6: rgba(63, 63, 63, 0.8);
   --fg-color-icon: var(--fg-color);
 
   --bg-color: #fff;
@@ -68,11 +68,12 @@
 }
 
 .notion {
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.2;
   color: var(--fg-color);
   caret-color: var(--fg-color);
-  font-family: inherit;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .notion > * {
@@ -536,8 +537,8 @@
   word-break: break-word;
   border-left: 3px solid currentcolor;
   padding: 0.2em 0.9em;
-  margin: 6px 0;
-  font-size: 1.2em;
+  margin: 10px 0;
+  font-size: 1em;
 }
 
 .notion-hr {
@@ -679,6 +680,7 @@ svg.notion-page-icon {
 
 .notion-asset-wrapper-image {
   max-width: 100%;
+  margin: 20px 0 !important;
 }
 
 .notion-asset-wrapper-full {
@@ -702,7 +704,7 @@ svg.notion-page-icon {
   white-space: pre-wrap;
   word-break: break-word;
   padding: 3px 2px !important;
-  margin: 1px 0 !important;
+  margin: 10px 0 !important;
 }
 
 .notion-text:first-child {
@@ -1297,11 +1299,13 @@ svg.notion-page-icon {
 }
 
 .notion-audio {
-  width: 100%;
+  width: 70%;
+  margin: 20px 0 !important;
 }
 
 .notion-audio audio {
-  width: 100%;
+  width: 70%;
+  margin: 20px 0 !important;
 }
 
 .notion-equation {

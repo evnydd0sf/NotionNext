@@ -43,7 +43,7 @@ const BLOG = {
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: 'evnydd0sf@gmail.com',
-  CONTACT_WEIBO: 'https://weibo.com/1997290725',
+  CONTACT_WEIBO: 'https://weibo.com/evnydd0sf',
   CONTACT_TWITTER: 'https://twitter.com/evnydd0sf',
   CONTACT_GITHUB: 'https://github.com/evnydd0sf',
   CONTACT_TELEGRAM: 'https://t.me/evnydd0sf',
