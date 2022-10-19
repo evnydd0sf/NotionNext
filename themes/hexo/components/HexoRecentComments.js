@@ -1,6 +1,6 @@
 import React from 'react'
 import { RecentComments } from '@waline/client'
-import BLOG from '@/blog.config'
+// import BLOG from '@/blog.config'
 import Card from '@/themes/hexo/components/Card'
 import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
@@ -16,7 +16,7 @@ const HexoRecentComments = (props) => {
   const [onLoading, changeLoading] = React.useState(true)
   React.useEffect(() => {
     RecentComments({
-      serverURL: BLOG.COMMENT_WALINE_SERVER_URL,
+      serverURL: 'https://waline-evnydd0sf.vercel.app',
       count: 5
     }).then(({ comments }) => {
       changeLoading(false)
