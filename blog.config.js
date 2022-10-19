@@ -25,11 +25,15 @@ const BLOG = {
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXXX
   APPEARANCE: 'auto', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   FONT: 'font-mono tracking-wider subpixel-antialiased', // 文章字体 ['font-sans', 'font-serif', 'font-mono'] @see https://www.tailwindcss.cn/docs/font-family
+  FONT_URL: 'https://fonts.font.im/css2?family=Noto+Serif+SC&display=swap', // 谷歌字体中国站镜像;对应的国际站地址：https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap
   FONT_AWESOME_PATH:
     'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css', // 图标库CDN ，国内推荐BootCDN，国外推荐 CloudFlare https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
   BACKGROUND_LIGHT: '#eeeeee', // use hex value, don't forget '#' e.g #fffefc
   BACKGROUND_DARK: '#000000', // use hex value, don't forget '#'
   SUB_PATH: '', // leave this empty unless you want to deploy in a folder
+
+  POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX || 'article', // POST类型文章的默认路径前缀，例如默认POST类型的路径是  /article/[slug]
+  // 如果此项配置为 '' 空， 则文章将没有前缀路径，使用场景： 希望 文章前缀路径为 /post 的情况 支持多级
 
   POST_LIST_STYLE: 'page', // ['page','scroll] 文章列表样式:页码分页、单页滚动加载
   POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'false', //  是否在列表加载文章预览
@@ -128,20 +132,22 @@ const BLOG = {
 
   ADSENSE_GOOGLE_ID: process.env.NEXT_PUBLIC_ADSENSE_GOOGLE_ID || '', // 谷歌广告ID e.g ca-pub-xxxxxxxxxxxxxxxx
 
-  // 无关紧要的配置
   // 自定义配置notion数据库字段名
   NOTION_PROPERTY_NAME: {
-    password: 'password',
-    type: 'type',
-    title: 'title',
-    status: 'status',
-    summary: 'summary',
-    slug: 'slug',
-    category: 'category',
-    date: 'date',
-    tags: 'tags',
-    icon: 'icon'
+    password: process.env.NEXT_PUBLIC_NOTION_PROPERTY_PASSWORD || 'password',
+    type: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TYPE || 'type',
+    title: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TITLE || 'title',
+    status: process.env.NEXT_PUBLIC_NOTION_PROPERTY_STATUS || 'status',
+    summary: process.env.NEXT_PUBLIC_NOTION_PROPERTY_SUMMARY || 'summary',
+    slug: process.env.NEXT_PUBLIC_NOTION_PROPERTY_SLUG || 'slug',
+    category: process.env.NEXT_PUBLIC_NOTION_PROPERTY_CATEGORY || 'category',
+    date: process.env.NEXT_PUBLIC_NOTION_PROPERTY_DATE || 'date',
+    tags: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TAGS || 'tags',
+    icon: process.env.NEXT_PUBLIC_NOTION_PROPERTY_ICON || 'icon'
   },
+
+  ENABLE_CACHE: process.env.ENABLE_CACHE || false, // 开启缓存 会将Notion数据缓存在内存中，稍微提升访问速度，但要更新内容需要多次刷新页面
+
   AVATAR: '/avatar.png', // 作者头像，被notion中的ICON覆盖。如果没有ICON则取public目录下的avatar.png
   TITLE: process.env.NEXT_PUBLIC_TITLE || "evnydd0sf's Blog", // 站点标题 ，被notion中的页面标题覆盖
   DESCRIPTION:
