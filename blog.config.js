@@ -1,8 +1,8 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
-  AUTHOR: 'evnydd0sf', // 作者
-  BIO: 'Galaxy Cluster Abell 1689', // 作者简介
-  LINK: 'https://blog.evnydd0sf.club', // 网站地址
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'evnydd0sf', // 作者
+  BIO: process.env.NEXT_PUBLIC_BIO || 'Galaxy Cluster Abell 1689', // 作者简介
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.evnydd0sf.club', // 网站地址
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || 'ec050d0de8d641d2abd2e060be118b83', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
