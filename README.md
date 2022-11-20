@@ -111,8 +111,11 @@ yarn run start # 本地启动NextJS服务
   
   <td align="center"><a href="https://github.com/haixin1225"><img src="https://avatars.githubusercontent.com/u/28828438" width="64px;"  alt="haixin1225"/><br/><sub><b>haixin1225</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=haixin1225" title="haixin1225" >🔧 🐛</a></td>
 
-  <td align="center"><a href="https://github.com/mouyase"><img src="https://avatars.githubusercontent.com/u/7844572" width="64px;"  alt="mouyase"/><br/><sub><b>haixin1225</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=mouyase" title="mouyase" >🔧 🐛</a></td>
+  <td align="center"><a href="https://github.com/mouyase"><img src="https://avatars.githubusercontent.com/u/7844572" width="64px;"  alt="mouyase"/><br/><sub><b>mouyase</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=mouyase" title="mouyase" >🔧 🐛</a></td>
   
+  <td align="center"><a href="https://github.com/qfdk"><img src="https://avatars.githubusercontent.com/u/2404478" width="64px;"  alt="qfdk"/><br/><sub><b>qfdk</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=qfdk" title="qfdk" >🔧 🐛</a></td>
+  
+  <td align="center"><a href="https://github.com/ifyz"><img src="https://avatars.githubusercontent.com/u/118271360" width="64px;"  alt="ifyz"/><br/><sub><b>ifyz</b></sub></a><br/><a href="https://github.com/tangly1024/NotionNext/commits?author=ifyz" title="ifyz" >🔧 🐛</a></td>
 
 </tr>
 </table>
